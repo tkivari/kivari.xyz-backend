@@ -28,6 +28,10 @@ router.get('/', function(req, res, next) {
   	if (!err) {
   	  res.json(resume);
   	}
+  	else { 
+  		console.log(err);
+  		res.json({status: "error - check log"}); 
+    }
   });
 });
 
