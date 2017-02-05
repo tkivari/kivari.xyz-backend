@@ -11,4 +11,5 @@
 ## installation
 ```
 npm install
+cp config/env-example.js config/env.js
 ```
