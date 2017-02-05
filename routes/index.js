@@ -10,8 +10,7 @@ router.get('/', function(req, res, next) {
 	var user = env.production.database.read.user;
 	var password = env.production.database.read.password;
 	var con_str = user+':'+password+'@'+host+'/resume';
-	console.log(con_str);
-
+	
   var db = mongojs(con_str);
   var contacts = db.collection('contacts');
   
