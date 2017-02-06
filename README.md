@@ -2,7 +2,7 @@
 
 ## requirements
  ```
- mongoDB
+ mongoDB 3.2+
  nodejs
  expressjs
  ```
