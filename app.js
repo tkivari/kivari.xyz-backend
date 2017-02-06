@@ -18,10 +18,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
+app.use('/resume', index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
+  
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
